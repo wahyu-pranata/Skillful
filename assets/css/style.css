@@ -1,0 +1,50 @@
+/* Navbar style start */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.navbar {
+    background: linear-gradient(to right, rgb(76, 76, 231), rgb(165, 165, 255));
+}
+
+.navbar .navbar-brand {
+    font-weight: 600;
+}
+
+.arrow {
+    border: 1px solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    margin-bottom: 2px;
+}
+
+.arrow.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transition: 0.3s;
+}
+
+.arrow.up {
+    transform: rotate(-135deg);
+    margin-bottom: 0;
+    -webkit-transform: rotate(-135deg);
+}
+
+.my-dropdown {
+    position: absolute;
+    padding: 20px;
+    top: -200px;
+    width: 100%;
+    height: 200px;
+    background: maroon;
+    transition: all 0.2s ease-in-out;
+}
+
+.my-dropdown.active {
+    top: 55px;
+}
+
+/* Navbar style end */
