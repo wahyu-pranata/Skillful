@@ -1,3 +1,6 @@
+/* Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -33,11 +36,13 @@ body {
 
 /* Navbar style start */
 .navbar {
-    background: linear-gradient(to right, rgb(76, 76, 231), rgb(165, 165, 255));
+    background-color: #e3f2fd;
 }
 
 .navbar .navbar-brand {
     font-weight: 600;
+    font-family: "Ubuntu";
+    2font-size: 1.3em;
 }
 
 .arrow {
@@ -58,6 +63,24 @@ body {
     transform: rotate(-135deg);
     margin-bottom: 0;
     -webkit-transform: rotate(-135deg);
+}
+
+.navbar .flex .btn-outline-success,
+.navbar .flex .btn-success {
+    font-weight: 600;
+}
+.navbar .flex .btn-outline-success {
+    margin-right: 1rem;
+    border: 1px solid #2196f3;
+    color: #2196f3;
+}
+.navbar .flex .btn-outline-success:hover {
+  background-color: #2196f3;
+    color: #fff;
+}
+.navbar .flex .btn-success {
+    background-color: #2196f3;
+    border-color: #2196f3;
 }
 
 .my-dropdown {
