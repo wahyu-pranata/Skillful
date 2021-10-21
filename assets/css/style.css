@@ -42,7 +42,7 @@ body {
 .navbar .navbar-brand {
     font-weight: 600;
     font-family: "Ubuntu";
-    2font-size: 1.3em;
+    font-size: 1.3em;
 }
 
 .arrow {
@@ -68,16 +68,24 @@ body {
 .navbar .flex .btn-outline-success,
 .navbar .flex .btn-success {
     font-weight: 600;
+    transition: all 0.3s;
+}
+
+.navbar .flex .btn-success:hover {
+    opacity: 0.8;
 }
 .navbar .flex .btn-outline-success {
     margin-right: 1rem;
     border: 1px solid #2196f3;
     color: #2196f3;
 }
+
 .navbar .flex .btn-outline-success:hover {
-  background-color: #2196f3;
+    opacity: 0.8;
+    background-color: #2196f3;
     color: #fff;
 }
+
 .navbar .flex .btn-success {
     background-color: #2196f3;
     border-color: #2196f3;
