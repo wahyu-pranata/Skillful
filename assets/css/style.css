@@ -1,10 +1,37 @@
-/* Navbar style start */
 * {
     margin: 0;
     padding: 0;
     border: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Scroll to top style start*/
+#scrollBtn {
+    display: none;
+    position: fixed;
+    right: 35px;
+    bottom: 30px;
+    background: none;
+    color: rgb(189, 0, 0);
+    font-size: 45px;
+    opacity: 1;
+    transition: all 0.3s;
+  }
+  
+  #scrollBtn:hover {
+    opacity: 0.75;
+  }
+/* Scroll to top style end */
+
+
+/* Navbar style start */
 .navbar {
     background: linear-gradient(to right, rgb(76, 76, 231), rgb(165, 165, 255));
 }
@@ -49,14 +76,16 @@
     opacity: 1;
     top: 55px;
 }
-
 /* Navbar style end */
 
 
 /* Blogs style start */
-
 .blog-cards .card a {
     text-decoration: none;
 }
 
+.img-opacity:hover {
+    transition: all 0.5s;
+    opacity: 0.8;
+}
 /* Blogs style end */
