@@ -70,19 +70,11 @@ body {
 .navbar .flex .btn-success {
     font-weight: 600;
     transition: all 0.3s;
-<<<<<<< HEAD
-=======
-}
-
-.navbar .flex .btn-success:hover {
-    opacity: 0.8;
->>>>>>> skillful/main
 }
 
 .navbar .flex .btn-success:hover {
     opacity: 0.8;
 }
-
 .navbar .flex .btn-outline-success {
     margin-right: 1rem;
     border: 1px solid #2196f3;
