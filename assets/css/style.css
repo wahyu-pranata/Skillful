@@ -26,6 +26,7 @@ body {
     font-size: 45px;
     opacity: 1;
     transition: all 0.3s;
+    z-index: 99;
   }
   
   #scrollBtn:hover {
