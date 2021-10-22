@@ -26,6 +26,7 @@ body {
     font-size: 45px;
     opacity: 1;
     transition: all 0.3s;
+    z-index: 99;
   }
   
   #scrollBtn:hover {
@@ -69,6 +70,13 @@ body {
 .navbar .flex .btn-success {
     font-weight: 600;
     transition: all 0.3s;
+<<<<<<< HEAD
+=======
+}
+
+.navbar .flex .btn-success:hover {
+    opacity: 0.8;
+>>>>>>> skillful/main
 }
 
 .navbar .flex .btn-success:hover {
@@ -98,7 +106,7 @@ body {
     top: -200px;
     width: 100%;
     height: 200px;
-    background: maroon;
+    background-color: #dae8f5;
     opacity: 0;
     transition: all 0.35s ease-in-out;
     z-index: 5;
