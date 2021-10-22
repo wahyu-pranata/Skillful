@@ -36,3 +36,12 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+
+// Loader
+const loader = document.querySelector('.spinner');
+window.addEventListener('load', loaderAnimation);
+
+function loaderAnimation() {
+  loader.classList.add('disppear');
+}
+
