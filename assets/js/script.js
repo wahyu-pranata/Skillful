@@ -38,7 +38,7 @@ function topFunction() {
 
 
 // Loader
-const loader = document.querySelector('.preloader');
+const loader = document.querySelector('.spinner');
 window.addEventListener('load', loaderAnimation);
 
 function loaderAnimation() {

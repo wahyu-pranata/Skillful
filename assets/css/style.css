@@ -35,8 +35,8 @@ body {
 /* Scroll to top style end */
 
 
-/* Preloader style start */
-.preloader {
+/* spinner style start */
+.spinner {
     position: fixed;
     top: 0;
     left: 0;
