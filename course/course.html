@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+    />
+
+    <!-- My Css -->
+    <link rel="stylesheet" href="../assets/css/style.css" />
+
+    <title>Skillfull | Course List</title>
+  </head>
+  <body>
+    <!-- Scroll to top button -->
+    <button onclick="topFunction()" id="scrollBtn">
+      <i class="bi bi-arrow-up-square-fill"></i>
+    </button>
+
+    <!-- Loader -->
+    <div class="spinner">
+      <img src="assets/img/loader-gif.gif" />
+    </div>
+
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-light sticky-lg-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">SKILLFUL</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-start"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">SKILLFUL</h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="blogs/blogs.html">Blog</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link course-dropdown"
+                  href="#"
+                  id="offcanvasNavbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Course <i class="arrow down"></i><i class="arrow up d-none"></i>
+                </a>
+                <!-- <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="#">Front End</a></li>
+                    <li><a class="dropdown-item" href="#">Back End</a></li>
+                    <li><a class="dropdown-item" href="#">Lorem ipsum</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul> -->
+              </li>
+            </ul>
+            <div class="flex mt-1">
+              <a href="" class="btn btn-outline-success">Daftar</a>
+              <a href="" class="btn btn-success">Masuk</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="my-dropdown">
+      <div class="content">
+        <h1>Content</h1>
+        <h1>Content</h1>
+        <h1>Content</h1>
+      </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Course Start -->
+    <header>
+      <div class="p-4 p-md-5 mb-5 text-white bg-dark">
+        <div class="col-md-6 px-0">
+          <h1 class="display-4 fst-italic">Course Banner</h1>
+          <p class="lead my-3">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro, reiciendis.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="container d-grid">
+        <div class="btnContainer text-center" id="btnContainer">
+          <h2>Course</h2>
+          <div class="filter mt-4 mb-5 d-flex justify-content-center">
+            <button class="btn btn-primary active me-5 px-4">Filter</button>
+            <button class="btn btn-primary me-5 px-4">Filter</button>
+            <button class="btn btn-primary me-5 px-4">Filter</button>
+            <button class="btn btn-primary px-4">Filter</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row row-cols-1 row-cols-md-2 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="https://source.unsplash.com/400x200" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://source.unsplash.com/400x200" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://source.unsplash.com/400x200" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural lead-in to additional
+                content.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://source.unsplash.com/400x200" class="card-img-top" alt="..." />
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Course End -->
+
+    <!-- Footer Start -->
+
+    <footer class="bg-dark text-white pt-4 pb-2" style="margin-top: 150px">
+      <div class="container">
+        <div class="row pb-3">
+          <div class="col-2">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Features</a>
+              </li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+
+          <div class="col-2">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Features</a>
+              </li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+
+          <div class="col-2">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-muted">Features</a>
+              </li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
+            </ul>
+          </div>
+
+          <div class="col-4 offset-1">
+            <form>
+              <h4 class="text-center">Leave a Feedback</h4>
+              <div class="gap-2">
+                <form action="" method="post">
+                  <div class="mb-2">
+                    <label for="email" class="visually-hidden form-label">Email</label>
+                    <input
+                      id="email"
+                      type="email"
+                      class="form-control"
+                      placeholder="Email address"
+                      required
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="visually-hidden form-label">Message</label>
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="3"
+                      placeholder="Message..."
+                      required
+                    ></textarea>
+                  </div>
+
+                  <button class="btn btn-primary" type="submit">Kirim</button>
+                </form>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between pt-3">
+          <p>Copyright © 2021. Skillful</p>
+          <ul class="list-unstyled d-flex fs-5 sosmed">
+            <a href="#"
+              ><li class="ms-3"><i class="bi bi-github text-light"></i></li
+            ></a>
+            <a href="#"
+              ><li class="ms-3"><i class="bi bi-instagram text-light"></i></li
+            ></a>
+            <a href="#"
+              ><li class="ms-3"><i class="bi bi-facebook text-light"></i></li
+            ></a>
+            <a href="#"
+              ><li class="ms-3"><i class="bi bi-youtube text-light"></i></li
+            ></a>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Footer End -->
+
+    <!-- My Script -->
+    <script src="../assets/js/script.js"></script>
+
+    <!-- Boostrap Script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
