@@ -147,3 +147,11 @@ body {
     opacity: 0.8;
 }
 /* Blogs style end */
+/* Course style start*/
+.course-width {
+    width: 1200px;
+}
+.card-width {
+  width: 350px;
+}
+/* Course style end */
