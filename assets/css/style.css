@@ -176,7 +176,7 @@ body {
 .card-body a::before {
   content: "";
   display: flex;
-  background-color: #ccc;
+  background-color: #dbeefd;
   width: 90%;
   height: 2px;
   position: absolute;
