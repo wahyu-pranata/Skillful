@@ -118,6 +118,8 @@ body {
 }
 
 .my-dropdown {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   position: fixed;
   padding: 20px;
   top: -200px;
@@ -128,7 +130,16 @@ body {
   transition: all 0.35s ease-in-out;
   z-index: 5;
 }
-
+.my-dropdown .content {
+  display: flex;
+  flex-direction: column;
+}
+.my-dropdown .content .content-title {
+  display: flex;
+}
+.my-dropdown .content .content-title h1 {
+  font-size: 1.8em;
+}
 .my-dropdown.active {
   opacity: 1;
   top: 55px;
