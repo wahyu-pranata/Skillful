@@ -147,3 +147,8 @@ body {
     opacity: 0.8;
 }
 /* Blogs style end */
+/* Course style start*/
+.course-width {
+    width: 1200px;
+}
+/* Course style end */
