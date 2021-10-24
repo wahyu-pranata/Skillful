@@ -198,3 +198,18 @@ body {
   bottom: 60px;
 }
 /* Course style end */
+/* Course 1 style start */
+.chapter-container {
+  width: 60%;
+}
+.chapter-container div {
+  border: 3px solid #2196f3;
+  border-radius: 10px;
+}
+.chapter-container div h3 {
+  font-size: 1.6em;
+}
+.chapter-container ul li {
+  list-style: none;
+}
+/* Course 1 style end */
