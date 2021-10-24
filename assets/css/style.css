@@ -137,6 +137,10 @@ body {
 .my-dropdown .content .content-title {
   display: flex;
 }
+.my-dropdown .content .content-title a {
+  color: #000;
+  text-decoration: none;
+}
 .my-dropdown .content .content-title h1 {
   font-size: 1.8em;
 }
