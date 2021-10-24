@@ -6,7 +6,10 @@
   padding: 0;
   border: 0;
 }
-
+::selection {
+  background-color: #90caf9;
+  color: #fff;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -149,6 +152,13 @@ body {
   top: 55px;
 }
 /* Navbar style end */
+/* Header style start */
+header {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("https://source.unsplash.com/random/1200x250");
+  background-size: cover;
+}
+/* Header style end */
 
 /* Blogs style start */
 .blog-cards .card a {
@@ -203,8 +213,8 @@ body {
   width: 60%;
 }
 .chapter-container div {
-  border: 3px solid #2196f3;
   border-radius: 10px;
+  background-color: #fff;
 }
 .chapter-container div h3 {
   font-size: 1.6em;
