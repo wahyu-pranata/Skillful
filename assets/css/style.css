@@ -1,10 +1,18 @@
 /* Google Font */
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   border: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Ubuntu";
+  font-weight: 300;
 }
 ::selection {
   background-color: #90caf9;
@@ -253,6 +261,32 @@ header {
   list-style: none;
 }
 /* Course 1 style end */
+
+/* sidebar style start */
+.sidebar {
+  background-color: #e3e5e7;
+  overflow-y: scroll;
+  height: 100%;
+}
+.sidebar div {
+  width: 100%;
+}
+.sidebar ul {
+  padding-left: 1rem;
+  width: 100%;
+}
+.sidebar li {
+  height: 1.2rem;
+  border-top: 1px solid #ccc;
+}
+.sidebar li a {
+  color: #000;
+  text-decoration: none;
+}
+.sidebar ::marker {
+  display: none;
+}
+/* sidebar style end */
 
 /* Footer style start */
 footer .sosmed-icon li .fab {
