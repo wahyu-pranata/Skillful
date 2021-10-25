@@ -14,6 +14,9 @@ h6 {
   font-family: "Ubuntu";
   font-weight: 300;
 }
+li {
+  list-style-type: none;
+}
 ::selection {
   background-color: #90caf9;
   color: #fff;
@@ -134,7 +137,7 @@ body {
   width: 33px;
 }
 .navbar .blog-item a::after {
-  content: '';
+  content: "";
   display: block;
   margin: 1px auto;
   width: 0;
@@ -147,7 +150,7 @@ body {
   width: 62px;
 }
 .navbar .course-item a::after {
-  content: '';
+  content: "";
   display: block;
   margin: 1px auto;
   width: 0;
@@ -277,6 +280,11 @@ header {
   background-color: #e3e5e7;
   overflow-y: scroll;
   height: 100%;
+  width: 230px;
+  flex-shrink: 0;
+  position: fixed;
+  left: 0;
+  top: 58px;
 }
 .sidebar div {
   width: 100%;
@@ -298,7 +306,22 @@ header {
 }
 /* sidebar style end */
 
+/* Materi style start */
+.materi-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.materi-container main {
+  margin-left: 250px;
+}
+/* Materi style end */
+
 /* Footer style start */
+.materi-container footer {
+  margin-left: 230px;
+}
 footer .sosmed-icon li .fab {
   transition: 0.5;
   color: #000;
@@ -314,7 +337,7 @@ footer .sosmed-icon li a {
   line-height: 32px;
   text-align: center;
   transition: 0.3s;
-  box-shadow: 0 5px 4px rgba(0,0,0,0.5);
+  box-shadow: 0 5px 4px rgba(0, 0, 0, 0.5);
 }
 .sosmed-icon li a:hover {
   transform: translateY(-5px);
