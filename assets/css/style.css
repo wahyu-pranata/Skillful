@@ -129,6 +129,33 @@ body {
   border-color: #2196f3;
 }
 
+.navbar .blog-item a:hover::after {
+  transition: all 0.4s;
+  width: 33px;
+}
+.navbar .blog-item a::after {
+  content: '';
+  display: block;
+  margin: 1px auto;
+  width: 0;
+  height: 2px;
+  background-color: #2196f3;
+  transition: all 0.3s;
+}
+.navbar .course-item a:hover::after {
+  transition: all 0.4s;
+  width: 62px;
+}
+.navbar .course-item a::after {
+  content: '';
+  display: block;
+  margin: 1px auto;
+  width: 0;
+  height: 2px;
+  background-color: #2196f3;
+  transition: all 0.3s;
+}
+
 .my-dropdown {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -234,6 +261,7 @@ header {
   list-style: none;
 }
 /* Course 1 style end */
+
 /* sidebar style start */
 .sidebar {
   background-color: #e3e5e7;
@@ -259,3 +287,26 @@ header {
   display: none;
 }
 /* sidebar style end */
+
+/* Footer style start */
+footer .sosmed-icon li .fab {
+  transition: 0.5;
+  color: #000;
+  font-size: 20px;
+}
+footer .sosmed-icon li a {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  display: block;
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 5px 4px rgba(0,0,0,0.5);
+}
+.sosmed-icon li a:hover {
+  transform: translateY(-5px);
+}
+/* Footer style end */
