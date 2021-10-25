@@ -198,7 +198,17 @@ header {
   transition: all 0.5s;
   opacity: 0.8;
 }
+
+.blog-cards .card-text {
+  font-size: 12px;
+  font-style: italic;
+}
+
+.blog-cards .card-text span {
+  color: #2196f3;
+}
 /* Blogs style end */
+
 /* Course style start*/
 .course-width {
   width: 1200px;
