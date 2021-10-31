@@ -218,6 +218,12 @@ header {
 .blog-cards .card-text span {
   color: #2196f3;
 }
+.content li {
+  list-style-type: disc;
+}
+.content li h6 {
+  font-weight: 500;
+}
 /* Blogs style end */
 
 /* Course style start*/
