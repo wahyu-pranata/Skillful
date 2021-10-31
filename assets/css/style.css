@@ -259,7 +259,10 @@ header {
 .blog-cards .card a {
   text-decoration: none;
 }
-
+.blog-cards .card a img {
+  width: 380px;
+  height: 190px;
+}
 .img-opacity:hover {
   transition: all 0.5s;
   opacity: 0.8;
@@ -273,8 +276,15 @@ header {
 .blog-cards .card-text span {
   color: #2196f3;
 }
-.content li {
+.content ol li {
+  list-style-type: decimal;
+}
+.content ul li {
   list-style-type: disc;
+}
+.content ul li a {
+  color: #2196f3;
+  text-decoration: none;
 }
 .content li h6 {
   font-weight: 500;
