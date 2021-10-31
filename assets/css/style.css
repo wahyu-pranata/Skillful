@@ -200,6 +200,58 @@ header {
 }
 /* Header style end */
 
+/* landing page style start */
+.landing-page-title h1 {
+  font-size: 3em;
+}
+.landing-page-title p {
+  font-size: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.landing-page-container img {
+  width: 500px;
+}
+.landing-page-section h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.landing-page-section h3::after {
+  content: "";
+  display: flex;
+  width: 100px;
+  height: 2px;
+  background-color: #90caf9;
+  margin-top: 5px;
+}
+.landing-page-section .container img {
+  width: 400px;
+}
+.landing-page-section .container p {
+  font-size: 1.2em;
+}
+.landing-page-section .container p a {
+  color: #2196f3;
+  text-decoration: none;
+}
+.developers {
+  margin-top: 5rem;
+}
+.developers .container figure img {
+  width: 150px;
+  border-radius: 50%;
+}
+.developers .container figure figcaption {
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: all 0.2s;
+}
+.developers .container figure:hover figcaption {
+  transform: translateY(0);
+  opacity: 1;
+}
+/* landing page style end */
+
 /* Blogs style start */
 .blog-cards .card a {
   text-decoration: none;
