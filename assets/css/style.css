@@ -324,6 +324,39 @@ header {
 }
 /* Materi style end */
 
+/* Comment style start */
+.comment-section {
+  width: 1000px;
+}
+.comment-section .input-group {
+  width: 100%;
+}
+.input-group input {
+  width: 30%;
+}
+.comment-section input,
+.comment-section textarea {
+  border: 1px solid #000;
+}
+.comment-section textarea {
+  resize: none;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .comment-section .input-group {
+    width: 100%;
+    flex-direction: column;
+  }
+  .input-group input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .comment-section textarea {
+    margin-top: 0rem !important;
+  }
+}
+/* Comment style end */
+
 /* Footer style start */
 .materi-container footer {
   margin-top: 120px;
