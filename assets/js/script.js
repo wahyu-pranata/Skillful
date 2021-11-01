@@ -1,12 +1,10 @@
 // navbar dropdown arrow animate
 const courseDropdown = document.querySelector('.course-dropdown');
-const arrowDown = document.querySelector('.arrow.down');
-const arrowUp = document.querySelector('.arrow.up');
+const arrow = document.querySelector('.arrow');
 
 
 courseDropdown.addEventListener('click', function() {
-    arrowDown.classList.toggle('d-none');
-    arrowUp.classList.toggle('d-none');
+    arrow.classList.toggle('active');
 })
 
 
