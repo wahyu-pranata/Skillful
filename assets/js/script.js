@@ -1,25 +1,24 @@
 // navbar dropdown arrow animate
-const courseDropdown = document.querySelector('.course-dropdown');
-const arrow = document.querySelector('.arrow');
+const courseDropdown = document.querySelector(".course-dropdown");
+const arrow = document.querySelector(".arrow");
 
-
-courseDropdown.addEventListener('click', function() {
-    arrow.classList.toggle('active');
-})
-
+courseDropdown.addEventListener("click", function () {
+  arrow.classList.toggle("active");
+});
 
 // navbar dropdown
-const myDropdown  = document.querySelector('.my-dropdown');
+const myDropdown = document.querySelector(".my-dropdown");
 
-courseDropdown.addEventListener('click', function() {
-    myDropdown.classList.toggle('active');
-})
-
+courseDropdown.addEventListener("click", function () {
+  myDropdown.classList.toggle("active");
+});
 
 // Scroll to top
 const scrollBtn = document.getElementById("scrollBtn");
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function () {
+  scrollFunction();
+};
 
 function scrollFunction() {
   if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
@@ -34,15 +33,19 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-
 // Loader
-const loader = document.querySelector('.spinner');
-window.addEventListener('load', loaderAnimation);
+const loader = document.querySelector(".spinner");
+window.addEventListener("load", loaderAnimation);
 
 function loaderAnimation() {
-  loader.classList.add('disppear');
+  loader.classList.add("disppear");
 }
 
-
-
-
+//exit offcanvas
+const exitBtn = document.querySelector("button.btn-close");
+exitBtn.addEventListener("click", function () {
+  if (myDropdown.classList.contains("active")) {
+    myDropdown.classList.remove("active");
+    arrow.classList.toggle("active");
+  }
+});
