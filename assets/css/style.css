@@ -461,6 +461,32 @@ footer .sosmed-icon li a {
   transform: translateY(-5px);
 }
 /* Footer style end */
+/* coming soon style start */
+.coming-soon {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 65px;
+}
+.coming-soon h1 {
+  font-size: 3.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.coming-soon h1::after {
+  content: "";
+  margin-top: 10px;
+  display: flex;
+  width: 80%;
+  height: 5px;
+  justify-content: center;
+  align-items: center;
+  background-color: #2196f3;
+}
+/* coming soon style end */
 /* Responsive start */
 
 @media screen and (max-width: 768px) {
