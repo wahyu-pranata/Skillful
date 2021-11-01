@@ -395,10 +395,10 @@ header {
   margin-right: 50px;
 }
 
-.materi-container .materi-main img{
+.materi-container .materi-main img {
   width: 50%;
   height: auto;
-  margin: 40px auto;
+  margin: 15px auto;
 }
 /* Materi style end */
 
@@ -528,4 +528,3 @@ footer .sosmed-icon li a {
   }
 }
 /* Responsive end */
-
