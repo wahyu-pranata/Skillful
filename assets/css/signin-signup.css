@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+::selection {
+  background-color: #90caf9;
+  color: #fff;
+}
+
 body, input {
     font-family: 'poppins', sans-serif;
 }
