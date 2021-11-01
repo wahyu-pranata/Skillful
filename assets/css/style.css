@@ -499,6 +499,10 @@ footer .sosmed-icon li a {
     width: 90%;
     margin-left: 2rem;
   }
+  .blog-cards .card a img {
+    width: 100%;
+    height: auto;
+  }
   .my-dropdown {
     display: none;
   }
