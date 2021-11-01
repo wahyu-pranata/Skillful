@@ -45,3 +45,6 @@ function loaderAnimation() {
   loader.classList.add('disppear');
 }
 
+
+
+
