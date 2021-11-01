@@ -155,7 +155,6 @@ body {
   background-color: #2196f3;
   transition: all 0.3s;
 }
-
 .my-dropdown {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -167,7 +166,6 @@ body {
   background-color: #dae8f5;
   opacity: 0;
   transition: all 0.35s ease-in-out;
-  z-index: 5;
 }
 .my-dropdown .content {
   display: flex;
@@ -185,6 +183,7 @@ body {
 }
 .my-dropdown.active {
   opacity: 1;
+  display: grid;
   top: 55px;
 }
 /* Navbar style end */
@@ -465,6 +464,16 @@ footer .sosmed-icon li a {
 /* Responsive start */
 
 @media screen and (max-width: 768px) {
+  .my-dropdown {
+    z-index: 9999;
+    display: none;
+  }
+  .my-dropdown.active {
+    top: 160px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
   .comment-section .input-group {
     width: 100%;
     flex-direction: column;
