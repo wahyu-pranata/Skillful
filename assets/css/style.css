@@ -387,6 +387,16 @@ header {
 .materi-container main {
   margin-left: 250px;
 }
+
+.materi-container .materi-main {
+  margin-right: 50px;
+}
+
+.materi-container .materi-main img{
+  width: 50%;
+  height: auto;
+  margin: 40px auto;
+}
 /* Materi style end */
 
 /* Comment style start */
@@ -462,6 +472,8 @@ A
 
 
 h1 {
-  color: white;
-  text-align: center;
+  font-size: 18px;
 }
+
+
+properti : "nilai";
