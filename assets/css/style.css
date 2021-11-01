@@ -240,6 +240,9 @@ header {
 .developers {
   margin-top: 5rem;
 }
+.developers .container {
+  width: 75%;
+}
 .developers .container figure img {
   width: 150px;
   border-radius: 50%;
@@ -417,19 +420,6 @@ header {
   resize: none;
   width: 100%;
 }
-@media screen and (max-width: 768px) {
-  .comment-section .input-group {
-    width: 100%;
-    flex-direction: column;
-  }
-  .input-group input {
-    width: 100%;
-    margin-bottom: 1rem;
-  }
-  .comment-section textarea {
-    margin-top: 0rem !important;
-  }
-}
 /* Comment style end */
 
 /* Footer style start */
@@ -464,3 +454,44 @@ footer .sosmed-icon li a {
   transform: translateY(-5px);
 }
 /* Footer style end */
+/* Responsive start */
+
+@media screen and (max-width: 768px) {
+  .comment-section .input-group {
+    width: 100%;
+    flex-direction: column;
+  }
+  .input-group input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .comment-section textarea {
+    margin-top: 0rem !important;
+  }
+  .landing-page-container,
+  .landing-page-section,
+  .landing-page-section div {
+    flex-direction: column;
+  }
+  .landing-page-container img {
+    width: 75%;
+  }
+  .developers .container {
+    width: 100%;
+  }
+  .developers .container figure figcaption {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  footer .container .row {
+    flex-direction: column;
+  }
+  footer .container .row ul {
+    padding-left: 1rem;
+  }
+  footer .col-4.offset-1 {
+    width: 80%;
+  }
+}
+/* Responsive end */
+
