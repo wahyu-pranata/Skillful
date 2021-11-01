@@ -506,5 +506,8 @@ footer .sosmed-icon li a {
   .my-dropdown {
     display: none;
   }
+  .blog-title img {
+    width: 80% !important;
+  }
 }
 /* Responsive end */
