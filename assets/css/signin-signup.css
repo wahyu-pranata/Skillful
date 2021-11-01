@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+::selection {
+  background-color: #90caf9;
+  color: #fff;
+}
+
 body, input {
     font-family: 'poppins', sans-serif;
 }
@@ -30,7 +35,7 @@ body, input {
 }
 
 .avatar {
-    width: 100px;
+    width: 120px;
 }
 
 .login-container {
@@ -43,8 +48,8 @@ form {
     width: 360px;
 }
 
-form h2 {
-    font-size: 2.9rem;
+form h3 {
+    font-size: 2.2rem;
     text-transform: uppercase;
     margin: 15px 0;
     color: #333;
@@ -210,13 +215,17 @@ form h2 {
         width: 290px;
     }
 
-    form h2 {
-        font-size: 2.4rem;
+    form h3 {
+        font-size: 2rem;
         margin: 8px 0
     }
 
     .img img {
         width: 400px;
+    }
+
+    form p:last-child {
+        font-size: 0.95em;
     }
 }
 
@@ -231,5 +240,16 @@ form h2 {
 
     .login-container {
         justify-content: center;
+    }
+
+    form p:last-child {
+        font-size: 0.9em;
+    }
+
+}
+
+@media (max-width: 550px) {
+    form p:last-child {
+        font-size: 0.8em;
     }
 }

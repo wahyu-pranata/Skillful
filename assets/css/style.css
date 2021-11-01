@@ -92,18 +92,15 @@ body {
   padding: 3px;
   margin-bottom: 2px;
   margin-left: 1px;
-}
-
-.arrow.down {
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   transition: 0.3s;
 }
 
-.arrow.up {
-  transform: rotate(-135deg);
+.arrow.active {
   margin-bottom: 0;
-  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+  transition: 0.3s;
 }
 
 .navbar .flex .btn-outline-success,
