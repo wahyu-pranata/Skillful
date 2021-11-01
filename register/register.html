@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Font Awesome Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- My Css -->
+    <link rel="stylesheet" href="../assets/css/signin-signup.css" />
+
+    <title>Skillfull | Login</title>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="img">
+        <img src="../assets/img/register.svg" alt="" class="login-image">
+      </div>
+      <div class="login-container">
+        <form action="" method="post">
+          <img class="avatar" src="../assets/img/avatar.svg" alt="">
+          <h2>Sign Up</h2>
+          <div class="input-div one">
+            <div class="icon">
+              <i class="fas fa-user"></i>
+            </div>
+            <div>
+              <p>Username</p>
+              <input class="input" type="text">
+            </div>
+          </div>
+
+          <div class="input-div two">
+            <div class="icon">
+              <i class="far fa-envelope"></i>
+            </div>
+            <div>
+              <p>Email</p>
+              <input class="input" type="email">
+            </div>
+          </div>
+
+          <div class="input-div three">
+            <div class="icon">
+              <i class="fas fa-lock"></i>
+            </div>
+            <div>
+              <p>Password</p>
+              <input id="password" class="input" type="password">
+              <div class="toggle toggle-show" onclick="showHide()">
+                <i class="bi bi-eye-fill"></i>
+              </div>
+              <div class="toggle toggle-hide d-none" onclick="showHide()">
+                <i class="bi bi-eye-slash-fill"></i>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="btn">Register</button>
+
+          <p>Already have an account yet? <a class="link-signup" href="../login/login.html">Sign In</a></p>
+        </form>
+      </div>
+    </div>
+
+
+    <script>
+      // toggle showHide password
+      const password = document.getElementById('password');
+      const toggleShow = document.querySelector('.toggle-show');
+      const toggleHide = document.querySelector('.toggle-hide');
+
+      function showHide() {
+        if(password.type == 'password') {
+          password.setAttribute('type', 'text');
+          toggleShow.classList.toggle('d-none');
+          toggleHide.classList.toggle('d-none');
+        } else {
+          password.setAttribute('type', 'password');
+          toggleShow.classList.toggle('d-none');
+          toggleHide.classList.toggle('d-none');
+        }
+      }
+      // login & register
+      const inputs = document.querySelectorAll('.input');
+
+      function focusFunction() {
+        let parent = this.parentNode.parentNode;
+        parent.classList.add('focus');
+      }
+
+      function blurFunction() {
+        let parent = this.parentNode.parentNode;
+        if(this.value == "") {
+          parent.classList.remove('focus');
+        }
+      }
+
+      inputs.forEach(input => {
+        input.addEventListener('focus', focusFunction);
+        input.addEventListener('blur', blurFunction);
+      });
+    </script>
+
+  </body>
+</html>
