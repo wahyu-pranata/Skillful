@@ -309,6 +309,9 @@ header {
 .card-width {
   width: 350px;
 }
+.card-img-top {
+  height: 200px;
+}
 .card-width .card {
   height: 400px;
   position: relative;
