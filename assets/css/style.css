@@ -482,5 +482,25 @@ footer .sosmed-icon li a {
   footer .col-4.offset-1 {
     width: 80%;
   }
+  section .container.filter-buttons {
+    width: 100% !important;
+  }
+  section .container.filter-buttons #btnContainer div {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  section .container.filter-buttons #btnContainer div button {
+    margin: 0 !important;
+    margin: 10px !important;
+  }
+  .course-width {
+    width: 90%;
+    margin-left: 2rem;
+  }
+  .my-dropdown {
+    display: none;
+  }
 }
 /* Responsive end */
