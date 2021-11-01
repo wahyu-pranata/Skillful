@@ -200,11 +200,69 @@ header {
 }
 /* Header style end */
 
+/* landing page style start */
+.landing-page-title h1 {
+  font-size: 3em;
+}
+.landing-page-title p {
+  font-size: 1em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.landing-page-container img {
+  width: 500px;
+}
+.landing-page-section {
+  padding-top: 60px;
+}
+.landing-page-section h3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.landing-page-section h3::after {
+  content: "";
+  display: flex;
+  width: 100px;
+  height: 2px;
+  background-color: #90caf9;
+  margin-top: 5px;
+}
+.landing-page-section .container img {
+  width: 400px;
+}
+.landing-page-section .container p {
+  font-size: 1.2em;
+}
+.landing-page-section .container p a {
+  color: #2196f3;
+  text-decoration: none;
+}
+.developers {
+  margin-top: 5rem;
+}
+.developers .container figure img {
+  width: 150px;
+  border-radius: 50%;
+}
+.developers .container figure figcaption {
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: all 0.2s;
+}
+.developers .container figure:hover figcaption {
+  transform: translateY(0);
+  opacity: 1;
+}
+/* landing page style end */
+
 /* Blogs style start */
 .blog-cards .card a {
   text-decoration: none;
 }
-
+.blog-cards .card a img {
+  width: 380px;
+  height: 190px;
+}
 .img-opacity:hover {
   transition: all 0.5s;
   opacity: 0.8;
@@ -217,6 +275,19 @@ header {
 
 .blog-cards .card-text span {
   color: #2196f3;
+}
+.content ol li {
+  list-style-type: decimal;
+}
+.content ul li {
+  list-style-type: disc;
+}
+.content ul li a {
+  color: #2196f3;
+  text-decoration: none;
+}
+.content li h6 {
+  font-weight: 500;
 }
 /* Blogs style end */
 
@@ -318,10 +389,49 @@ header {
 }
 /* Materi style end */
 
+/* Comment style start */
+.comment-section {
+  width: 1000px;
+}
+.comment-section .input-group {
+  width: 100%;
+}
+.input-group input {
+  width: 30%;
+}
+.comment-section input,
+.comment-section textarea {
+  border: 1px solid #000;
+}
+.comment-section textarea {
+  resize: none;
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .comment-section .input-group {
+    width: 100%;
+    flex-direction: column;
+  }
+  .input-group input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .comment-section textarea {
+    margin-top: 0rem !important;
+  }
+}
+/* Comment style end */
+
 /* Footer style start */
 .materi-container footer {
   margin-top: 120px;
   margin-left: 230px;
+}
+.nav-item.mb-2 a {
+  color: #aaa;
+}
+.nav-item.mb-2:hover a {
+  color: #fff;
 }
 footer .sosmed-icon li .fab {
   transition: 0.5;
