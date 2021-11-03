@@ -49,3 +49,36 @@ exitBtn.addEventListener("click", function () {
     arrow.classList.toggle("active");
   }
 });
+
+// Feedback form
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxjh1-KFYGSphGs1m5z9HDxXrJgdgtedWf5QUDaxpxIDTkpX5hkOA1-tjN5bA4IPjEk/exec'
+const form = document.forms['feedback-form']
+const btnSubmit = document.querySelector('.btn-submit');
+const btnLoading = document.getElementById('btn-loading');
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  btnLoading.classList.toggle('d-none');
+  btnSubmit.classList.toggle('d-none');
+  
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+      btnLoading.classList.toggle('d-none');
+      btnSubmit.classList.toggle('d-none');
+      Swal.fire(
+        'Lorem ipsum',
+        'lorem ipsum lorem ipsum lorem',
+        'success'
+      )
+      form.reset();
+      console.log('Success!', response)
+    })
+    .catch(error => {
+      Swal.fire(
+        'Lorem ipsum',
+        'lorem ipsum lorem ipsum lorem',
+        'error'
+      )
+      console.error('Error!', error.message)
+    })
+})

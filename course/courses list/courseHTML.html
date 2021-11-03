@@ -36,7 +36,7 @@
   <body>
     <!-- Scroll to top button -->
     <button onclick="topFunction()" id="scrollBtn">
-      <i class="bi bi-arrow-up-square-fill"></i>
+      <i class="bi bi-arrow-up-circle-fill"></i>
     </button>
 
     <!-- Loader -->
@@ -284,36 +284,40 @@
           </div>
 
           <div class="col-4 offset-1">
-            <form>
-              <h4 class="text-center">Leave a Feedback</h4>
-              <div class="gap-2">
-                <form action="" method="post">
-                  <div class="mb-2">
-                    <label for="email" class="visually-hidden form-label">Email</label>
-                    <input
-                      id="email"
-                      type="email"
-                      class="form-control"
-                      placeholder="Email address"
-                      required
-                      autocomplete="off"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label for="message" class="visually-hidden form-label">Message</label>
-                    <textarea
-                      class="form-control"
-                      id="message"
-                      rows="3"
-                      placeholder="Message..."
-                      required
-                    ></textarea>
-                  </div>
+            <h4 class="text-center">Leave a Feedback</h4>
+            <div class="gap-2">
+              <form action="" method="POST" name="feedback-form">
+                <div class="mb-2">
+                  <label for="email" class="visually-hidden form-label">Email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    class="form-control"
+                    placeholder="Email address"
+                    required
+                    autocomplete="off"
+                    name="email"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="visually-hidden form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="message"
+                    rows="3"
+                    placeholder="Message..."
+                    required
+                    name="message"
+                  ></textarea>
+                </div>
 
-                  <button class="btn btn-primary" type="submit">Kirim</button>
-                </form>
-              </div>
-            </form>
+                <button class="btn btn-primary btn-submit" type="submit">Submit</button>
+                  <button class="btn btn-primary d-none" id="btn-loading" type="button" disabled>
+                    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                    Loading...
+                  </button>
+              </form>
+            </div>
           </div>
         </div>
 
@@ -345,5 +349,9 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Sweet alert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
   </body>
 </html>
