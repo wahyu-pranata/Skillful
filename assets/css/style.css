@@ -427,6 +427,16 @@ header {
   resize: none;
   width: 100%;
 }
+.comment-section button {transition: 0.3s;}
+.comment-section button:hover {
+  transition: 0.3s;
+  opacity: 0.9;
+  box-shadow: 1px 1px 3px #333;
+}
+.comment-section button:active {
+  transition: 0.1s;
+  transform: scale(0.95);
+}
 /* Comment style end */
 
 /* Footer style start */
@@ -490,6 +500,12 @@ footer .sosmed-icon li a {
 /* Responsive start */
 
 @media screen and (max-width: 768px) {
+  .navbar .blog-item a::after {
+    margin: 1px 0;
+  }
+  .navbar .course-item a::after {
+    margin: 1px 0;
+  }
   .my-dropdown {
     z-index: 9999;
     display: none;
