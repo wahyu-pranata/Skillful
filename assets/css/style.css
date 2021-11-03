@@ -36,11 +36,11 @@ body {
   right: 40px;
   bottom: 50px;
   background: none;
-  color: rgb(189, 0, 0);
+  color: #1e87dd;
   font-size: 45px;
-  opacity: 1;
-  transition: all 0.3s;
+  transition: 0.3s;
   z-index: 99;
+  border-radius: 50%;
 }
 
 #scrollBtn:hover {
